@@ -1,0 +1,21 @@
+@import './common';
+@import './example';
+// @import './layouts/dark_light';
+
+@import './utils/vars';
+@import './utils/visually-hidden';
+@import './utils/mixins';
+
+@import './base/reset';
+
+@import './components/cursor';
+@import './components/container';
+@import './components/buttons';
+@import './components/sticky_button';
+
+@import './layouts/header_home';
+@import './layouts/header_my_library';
+@import './layouts/gallery';
+@import './layouts/footer';
+@import './layouts/modal';
+@import './layouts/modal_team';

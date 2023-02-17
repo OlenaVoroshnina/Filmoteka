@@ -1,0 +1,151 @@
+.btn {
+  padding: 13px 8px;
+  max-width: 152px;
+  max-height: 44px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  border-color: var(--btn-text-dark-color);
+  color: var(--btn-text-dark-color);
+  border-style: solid;
+  background-color: transparent;
+
+  transition: background-color var(--typical-hover-transition),
+    color var(--typical-hover-transition),
+    transform var(--typical-hover-transition),
+    border-color var(--typical-hover-transition),
+    outline var(--typical-hover-transition);
+
+  &:hover,
+  &:focus {
+    background-color: var(--active-btn-color);
+    color: var(--btn-text-light-color);
+    border-color: transparent;
+    outline: none;
+    transform: translateY(-2px);
+  }
+}
+
+.btn-active {
+  background-color: var(--active-btn-color);
+  color: var(--btn-text-light-color);
+  border-radius: 5px;
+  border-color: transparent;
+  outline: none;
+}
+
+.btn-header {
+  color: var(--btn-text-light-color);
+  border-color: var(--btn-text-light-color);
+  border-style: solid;
+
+  background-color: transparent;
+
+  transition: background-color var(--typical-hover-transition),
+    color var(--typical-hover-transition),
+    transform var(--typical-hover-transition),
+    border-color var(--typical-hover-transition),
+    outline var(--typical-hover-transition);
+
+  &:hover,
+  &:focus {
+    background-color: var(--active-btn-color);
+    color: var(--btn-text-light-color);
+    border-color: transparent;
+    outline: none;
+    transform: translateY(-2px);
+  }
+}
+// ==========================================================================
+// это старый вариант
+// .btn .is-active {
+//   background-color: var(--active-btn-color);
+//   color: var(--btn-text-light-color);
+//   border-radius: 5px;
+//   border-color: transparent;
+//   outline: none;
+
+//   transition: background-color var(--typical-hover-transition),
+//     color var(--typical-hover-transition),
+//     transform var(--typical-hover-transition),
+//     border-color var(--typical-hover-transition);
+
+//   filter: drop-shadow(0px 8px 43px rgba(255, 107, 1, 0.6));
+
+//   &:hover,
+//   &:focus,
+//   &:active {
+//     border-color: var(--btn-text-dark-color);
+//     color: var(--btn-text-dark-color);
+//     border-style: solid;
+
+//     background-color: transparent;
+
+//     transform: translateY(-2px);
+//   }
+// }
+
+// .btn {
+//   // padding: 13px 8px;
+//   // max-width: 152px;
+//   // max-height: 44px;
+
+//   // display: flex;
+//   // align-items: center;
+
+//   // font-weight: 500;
+//   // font-size: 12px;
+//   // line-height: 1.33;
+//   // text-align: center;
+//   // border-radius: 5px;
+
+//   border-color: var(--btn-text-dark-color);
+//   color: var(--btn-text-dark-color);
+//   border-style: solid;
+
+//   background-color: transparent;
+
+//   transition: background-color var(--typical-hover-transition),
+//     color var(--typical-hover-transition),
+//     border-color var(--typical-hover-transition),
+//     outline var(--typical-hover-transition),
+//     transform var(--typical-hover-transition);
+
+//   &:hover,
+//   &:focus {
+//     background-color: var(--active-btn-color);
+//     color: var(--btn-text-light-color);
+//     border-color: transparent;
+//     outline: none;
+//     transform: translateY(-2px);
+//   }
+// }
+
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f7f7f7;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #ff2600, var(--active-btn-color));
+  border-radius: 8px;
+  border: 1px solid #f7f7f7;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to top, #ff2600, var(--active-btn-color));
+}
